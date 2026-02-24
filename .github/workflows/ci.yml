@@ -74,6 +74,8 @@ jobs:
           log-file: ci-output.log
           commit-mode: pr
           max-attempts: 2
+          copilot-token: ${{ secrets.GH_PAT }}
         env:
           GH_TOKEN: ${{ secrets.GH_PAT }}
           COPILOT_GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
