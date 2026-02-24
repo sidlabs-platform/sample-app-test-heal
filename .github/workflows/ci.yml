@@ -58,8 +58,6 @@ jobs:
       pull-requests: write
     steps:
       - uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GH_PAT }}
 
       - uses: actions/download-artifact@v4
         with:
@@ -76,6 +74,4 @@ jobs:
           max-attempts: 2
           copilot-token: ${{ secrets.GH_PAT }}
         env:
-          GH_TOKEN: ${{ secrets.GH_PAT }}
           COPILOT_GITHUB_TOKEN: ${{ secrets.GH_PAT }}
-          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
