@@ -1,0 +1,24 @@
+{
+  "name": "sample-app-test-heal",
+  "version": "1.0.0",
+  "description": "Sample app to validate Auto-Heal CI Agent with test failures",
+  "main": "src/calculator.js",
+  "scripts": {
+    "test": "jest --verbose",
+    "test:json": "jest --json --outputFile=test-results.json --verbose",
+    "lint": "eslint src/ tests/",
+    "lint:json": "eslint src/ tests/ --format json --output-file lint-output.json"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "verbose": true,
+    "testMatch": [
+      "**/tests/**/*.test.js"
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+backend: copilot-cli
+language: node
+maxAttempts: 2
+paths:
+  allowed:
+    - src/
+    - tests/
+  protected:
+    - .github/
+    - package.json
+    - package-lock.json

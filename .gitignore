@@ -1,0 +1,5 @@
+node_modules/
+ci-output.log
+lint-output.json
+test-results.json
+.heal-audit/
