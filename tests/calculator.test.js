@@ -38,7 +38,7 @@ describe('Calculator', () => {
 
     test('multiplies decimal numbers', () => {
       // BUG: Wrong expected value — 2.5 * 4 = 10, not 10.5
-      expect(multiply(2.5, 4)).toBe(10.5);
+      expect(multiply(2.5, 4)).toBe(10);
     });
   });
 
