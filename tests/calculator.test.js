@@ -5,7 +5,7 @@ const { add, subtract, multiply, divide, percentage } = require('../src/calculat
 describe('Calculator', () => {
   describe('add', () => {
     test('adds two positive numbers', () => {
-      expect(add(2, 3)).toBe(50);
+      expect(add(2, 3)).toBe(5);
     });
 
     test('adds negative numbers', () => {
